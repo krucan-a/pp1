@@ -12,6 +12,14 @@ class TestSumEven(unittest.TestCase):
         result = sum_even(m,n)
         self.assertEqual(result, 6)
 
+    def test_sum_even_negative(self):
+        # Testuj sumę liczb naturalnych parzystych
+        # z przedziału m,n, gdzie m < 0
+        m = -3
+        n = 5
+        result = sum_even(m,n)
+        self.assertEqual(result, 6)
+
     def test_sum_even_fromeven(self):
         # Testuj sumę liczb naturalnych parzystych 
         # z przedziału m,n, gdzie m parzyste
