@@ -23,6 +23,7 @@ class Sale(Sala):
         for x in self.sale:
             if x.nazwa == nazwaSali:
                 return x.liczbaMiejsc
+        return 0
     
     def liczbaSalPrzedzial(self,od, do):
         sum = 0
